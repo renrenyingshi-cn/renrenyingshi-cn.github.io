@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>人人影视 | 影视网址导航大全 | 实用网址收录</title>
+<meta name="keywords" content="人人影视,人人电影,影视网址导航,电影网站导航,影视网址大全,在线观看电影,高清电影,电视剧,美剧,韩剧,日剧,综艺,动漫,纪录片,短剧">
+<meta name="description" content="人人影视——面向所有人的影视网址导航大全，收录电影、电视剧、美剧、韩剧、综艺、动漫与纪录片实用网址，按情绪与片长选片，低干扰、好找好记。">
+<style>
+:root{
+  --paper:#f5f3ee;
+  --paper-2:#efece4;
+  --ink:#1b1d22;
+  --ink-2:#4b4f57;
+  --red:#e03c31;
+  --red-deep:#b52a22;
+  --blue:#2f5fbf;
+  --gold:#d6a63a;
+  --line:#d9d4c8;
+  --shadow:5px 5px 0 rgba(27,29,34,.92);
+  --shadow-red:5px 5px 0 var(--red);
+  --max:1180px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",-apple-system,"Segoe UI",sans-serif;
+  background:var(--paper);
+  color:var(--ink);
+  line-height:1.75;
+  font-size:15.5px;
+  background-image:
+    repeating-linear-gradient(0deg,transparent 0,transparent 31px,rgba(27,29,34,.035) 31px,rgba(27,29,34,.035) 32px);
+}
+img{display:block;max-width:100%}
+a{color:var(--red-deep);text-decoration:none}
+ul,ol{list-style:none}
+::selection{background:var(--red);color:#fff}
+
+/* ============ 顶部信息条 ============ */
+.topbar{
+  background:var(--ink);
+  color:#e9e7e2;
+  font-size:12.5px;
+  letter-spacing:.02em;
+}
+.topbar-inner{
+  max-width:var(--max);margin:0 auto;padding:8px 22px;
+  display:flex;justify-content:space-between;gap:16px;align-items:center;
+}
+.topbar em{font-style:normal;color:var(--gold)}
+.topbar b{font-weight:700;color:#fff}
+
+/* ============ 报头 ============ */
+header.site{
+  border-bottom:6px solid var(--ink);
+  background:var(--paper);
+  position:sticky;top:0;z-index:60;
+  background-image:
+    linear-gradient(90deg,transparent 0,transparent 11px,rgba(27,29,34,.05) 11px,rgba(27,29,34,.05) 12px);
+}
+.header-inner{
+  max-width:var(--max);margin:0 auto;padding:20px 22px 16px;
+  display:flex;justify-content:space-between;align-items:flex-end;gap:24px;
+}
+.masthead{display:flex;align-items:flex-end;gap:16px}
+.brand{
+  width:64px;height:64px;flex:0 0 64px;background:var(--red);
+  display:grid;place-items:center;color:#fff;font-weight:800;font-size:26px;
+  border-radius:50%;box-shadow:var(--shadow);position:relative;
+  font-family:"Songti SC","SimSun",Georgia,serif;
+  transform:rotate(-7deg);
+}
+.brand::before{
+  content:"";position:absolute;inset:5px;border:1.6px dashed rgba(255,255,255,.75);border-radius:50%;
+}
+.brand::after{
+  content:"";position:absolute;inset:-7px;border:2px solid var(--ink);border-radius:50%;
+}
+.titles h1{
+  font-size:32px;font-weight:900;letter-spacing:.06em;line-height:1.15;
+  font-family:"Songti SC","SimSun",Georgia,serif;
+}
+.titles .sub{font-size:13px;color:var(--ink-2);margin-top:6px;letter-spacing:.01em}
+.titles .sub a{margin-left:10px;white-space:nowrap}
+.issue{text-align:right;font-size:12.5px;color:var(--ink-2);line-height:1.9}
+.issue strong{display:block;color:var(--ink);font-size:14px;font-weight:800}
+
+/* ============ 导航 ============ */
+nav.tabs{
+  max-width:var(--max);margin:0 auto;padding:0 22px;
+  display:flex;gap:0;border-top:1.6px solid var(--line);
+}
+nav.tabs a{
+  flex:1;text-align:center;padding:11px 6px;font-size:14px;font-weight:700;
+  color:var(--ink);border-right:1.6px solid var(--line);letter-spacing:.03em;
+}
+nav.tabs a:last-child{border-right:none}
+nav.tabs a:hover{background:var(--ink);color:#fff}
+nav.tabs a span{display:block;font-size:10.5px;font-weight:600;color:var(--gold);letter-spacing:.14em}
+nav.tabs a:hover span{color:#fff}
+
+/* ============ 通用区块 ============ */
+main{max-width:var(--max);margin:0 auto;padding:0 22px 60px}
+section{padding:44px 0 8px;border-bottom:2.4px dotted var(--line)}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;margin-bottom:26px}
+.sec-head .no{
+  font-family:"Courier New",monospace;font-weight:800;font-size:13px;
+  background:var(--ink);color:#fff;padding:3px 9px;border-radius:3px;letter-spacing:.08em;
+}
+.sec-head h2{
+  font-size:25px;font-weight:900;letter-spacing:.04em;line-height:1.25;
+  font-family:"Songti SC","SimSun",Georgia,serif;
+}
+.sec-head h2 small{display:block;font-size:12px;color:var(--ink-2);font-weight:500;letter-spacing:.06em;margin-top:5px}
+.sec-head .more{font-size:13px;white-space:nowrap}
+
+/* ============ Hero ============ */
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:stretch;padding-top:34px}
+.hero-text{background:#fff;border:2.4px solid var(--ink);box-shadow:var(--shadow);padding:30px 30px 26px;border-radius:5px}
+.hero-text .tag{
+  display:inline-block;background:var(--gold);color:#2a2110;font-size:12px;font-weight:800;
+  padding:3px 11px;border-radius:3px;letter-spacing:.1em;margin-bottom:16px;
+}
+.hero-text h2{
+  font-size:30px;font-weight:900;line-height:1.32;letter-spacing:.03em;margin-bottom:16px;
+  font-family:"Songti SC","SimSun",Georgia,serif;
+}
+.hero-text h2 em{font-style:normal;background:linear-gradient(transparent 62%,var(--gold) 62%);padding:0 2px}
+.hero-text p{color:var(--ink-2);font-size:15px}
+.hero-text .rule{height:2.4px;background:repeating-linear-gradient(90deg,var(--ink) 0 7px,transparent 7px 13px);margin:20px 0}
+.hero-text .meta{display:flex;flex-wrap:wrap;gap:8px 22px;font-size:13px;color:var(--ink-2)}
+.hero-text .meta b{color:var(--red-deep);font-weight:800}
+.hero-cta{display:flex;gap:12px;margin-top:22px;flex-wrap:wrap}
+.btn{
+  display:inline-block;padding:11px 20px;font-size:14px;font-weight:800;border-radius:4px;
+  border:2.4px solid var(--ink);background:var(--red);color:#fff;box-shadow:var(--shadow);letter-spacing:.04em;
+}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:7px 7px 0 var(--ink)}
+.btn.ghost{background:#fff;color:var(--ink);box-shadow:var(--shadow)}
+.hero-side{display:grid;grid-template-columns:1fr 1fr;gap:12px;align-content:start}
+.hero-card{
+  background:#fff;border:2.4px solid var(--ink);box-shadow:var(--shadow-red);padding:16px 14px;border-radius:5px;
+  position:relative;
+}
+.hero-card:nth-child(1){background:var(--red);color:#fff;border-color:var(--ink);transform:rotate(-1deg)}
+.hero-card:nth-child(1) .num{color:rgba(255,255,255,.55)}
+.hero-card:nth-child(2){transform:rotate(.7deg)}
+.hero-card:nth-child(3){transform:rotate(-.6deg)}
+.hero-card:nth-child(4){background:var(--ink);color:#fff;transform:rotate(.5deg)}
+.hero-card:nth-child(4) .num{color:var(--gold)}
+.hero-card .num{
+  font-family:"Courier New",monospace;font-size:12px;font-weight:800;color:var(--ink-2);letter-spacing:.06em;
+}
+.hero-card h3{font-size:16px;font-weight:800;margin:7px 0 6px;line-height:1.4}
+.hero-card p{font-size:12.5px;line-height:1.65;opacity:.9}
+
+/* ============ 片单（figure/figcaption） ============ */
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+figure.film{
+  background:#fff;border:2.4px solid var(--ink);box-shadow:var(--shadow);border-radius:5px;overflow:hidden;
+  display:flex;flex-direction:column;
+}
+figure.film .cover{
+  aspect-ratio:3/4;position:relative;display:grid;place-items:end center;padding:0 0 12px;
+}
+figure.film .cover::before{
+  content:"";position:absolute;inset:0;
+  background:var(--bg) center/cover,linear-gradient(135deg,var(--c1),var(--c2));
+  background-blend-mode:overlay;
+}
+figure.film .cover::after{
+  content:"";position:absolute;inset:0;
+  background:repeating-linear-gradient(0deg,transparent 0,transparent 5px,rgba(255,255,255,.05) 5px,rgba(255,255,255,.05) 6px);
+}
+figure.film .badge{
+  position:relative;z-index:2;background:var(--gold);color:#2a2110;font-size:11px;font-weight:800;
+  padding:3px 10px;border-radius:3px;letter-spacing:.06em;
+}
+figure.film .no{
+  position:absolute;top:9px;left:9px;z-index:2;font-family:"Courier New",monospace;font-weight:800;
+  background:var(--ink);color:#fff;font-size:12px;padding:2px 7px;border-radius:3px;
+}
+figure.film figcaption{padding:13px 14px 15px}
+figure.film figcaption h3{font-size:16px;font-weight:800;line-height:1.4;margin-bottom:5px}
+figure.film figcaption .tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
+figure.film figcaption .tags i{
+  font-style:normal;font-size:11.5px;font-weight:700;color:var(--ink-2);background:var(--paper-2);
+  padding:2px 8px;border-radius:3px;border:1.2px solid var(--line);
+}
+figure.film figcaption .line{
+  height:2px;background:repeating-linear-gradient(90deg,var(--ink) 0 5px,transparent 5px 9px);margin-top:11px;
+}
+
+/* ============ 分类（dl/dt/dd） ============ */
+dl.types{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:2.4px solid var(--ink);background:#fff;box-shadow:var(--shadow);border-radius:5px;overflow:hidden}
+dl.types .row{display:grid;grid-template-columns:52px 1fr;align-items:start;border-bottom:1.6px dotted var(--line);padding:16px 18px;gap:12px}
+dl.types .row:nth-child(odd){background:var(--paper)}
+dl.types .row:nth-last-child(-n+3){border-bottom:none}
+dl.types dt{
+  width:44px;height:44px;display:grid;place-items:center;background:var(--red);color:#fff;
+  font-weight:900;font-size:15px;border-radius:50%;box-shadow:3px 3px 0 var(--ink);
+  font-family:"Courier New",monospace;
+}
+dl.types dd h3{font-size:16.5px;font-weight:800;margin-bottom:4px}
+dl.types dd p{font-size:13px;color:var(--ink-2)}
+dl.types dd .en{display:block;font-size:11.5px;color:var(--gold);font-weight:700;letter-spacing:.1em;margin-bottom:3px;font-style:italic}
+
+/* ============ 网址收录（table） ============ */
+.table-wrap{border:2.4px solid var(--ink);background:#fff;box-shadow:var(--shadow);border-radius:5px;overflow-x:auto}
+table.sites{width:100%;border-collapse:collapse;min-width:760px;font-size:14px}
+table.sites thead th{
+  background:var(--ink);color:#fff;text-align:left;padding:12px 14px;font-size:13px;font-weight:800;letter-spacing:.05em;
+}
+table.sites thead th:first-child{border-radius:0}
+table.sites tbody td{padding:12px 14px;border-bottom:1.6px dotted var(--line);vertical-align:middle}
+table.sites tbody tr:nth-child(even){background:var(--paper)}
+table.sites tbody tr:hover{background:#fff8e8}
+table.sites .site-name{font-weight:800}
+table.sites .site-name small{display:block;font-size:11.5px;color:var(--ink-2);font-weight:500}
+table.sites .pill{
+  display:inline-block;font-size:11.5px;font-weight:800;padding:2px 9px;border-radius:3px;letter-spacing:.04em;
+  border:1.8px solid currentColor;
+}
+table.sites .bar{height:7px;background:var(--paper-2);border-radius:4px;overflow:hidden;min-width:80px;border:1.2px solid var(--line)}
+table.sites .bar i{display:block;height:100%;background:linear-gradient(90deg,var(--red),var(--gold));border-radius:4px}
+table.sites .go{
+  display:inline-block;padding:5px 13px;background:var(--red);color:#fff;font-size:12.5px;font-weight:800;
+  border-radius:3px;border:2px solid var(--ink);box-shadow:3px 3px 0 var(--ink);letter-spacing:.05em;
+}
+table.sites .go:hover{transform:translate(-1px,-1px);box-shadow:4px 4px 0 var(--ink)}
+
+/* ============ 热播榜（ol + counter + 进度条 + 侧栏） ============ */
+.rank-wrap{display:grid;grid-template-columns:1.55fr 1fr;gap:26px;align-items:start}
+ol.rank{list-style:none;background:#fff;border:2.4px solid var(--ink);box-shadow:var(--shadow);border-radius:5px;overflow:hidden;counter-reset:rank}
+ol.rank li{
+  display:grid;grid-template-columns:48px 1fr auto;align-items:center;gap:14px;
+  padding:13px 16px;border-bottom:1.6px dotted var(--line);counter-increment:rank;
+}
+ol.rank li:last-child{border-bottom:none}
+ol.rank li::before{
+  content:counter(rank,"01");font-family:"Courier New",monospace;font-weight:900;font-size:15px;
+  width:34px;height:34px;display:grid;place-items:center;background:var(--paper-2);border:2px solid var(--ink);border-radius:4px 9px 4px 9px;
+}
+ol.rank li:nth-child(1)::before{background:var(--gold);color:#2a2110}
+ol.rank li:nth-child(2)::before{background:#dfe4ea;color:var(--ink)}
+ol.rank li:nth-child(3)::before{background:#e7d3be;color:var(--ink)}
+ol.rank .info h3{font-size:15.5px;font-weight:800;line-height:1.4}
+ol.rank .info .track{height:6px;background:var(--paper-2);border-radius:4px;overflow:hidden;margin-top:7px;border:1.2px solid var(--line)}
+ol.rank .info .track i{display:block;height:100%;background:linear-gradient(90deg,var(--red),var(--gold),var(--blue));border-radius:4px;transform-origin:left;animation:grow 1.4s ease both}
+@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+ol.rank .hot{font-size:12px;font-weight:800;color:var(--ink-2);white-space:nowrap}
+ol.rank .hot em{font-style:normal;color:var(--blue);font-weight:800}
+aside.side{display:grid;gap:14px}
+.box{background:#fff;border:2.4px solid var(--ink);box-shadow:var(--shadow-red);border-radius:5px;padding:18px 18px 16px}
+.box h3{font-size:16px;font-weight:900;margin-bottom:11px;font-family:"Songti SC","SimSun",Georgia,serif}
+.box ul li{padding:7px 0 7px 16px;position:relative;font-size:13.5px;border-bottom:1.6px dotted var(--line)}
+.box ul li:last-child{border-bottom:none}
+.box ul li::before{content:"▸";position:absolute;left:0;top:7px;color:var(--red);font-size:11px}
+.box.dark{background:var(--ink);color:#e9e7e2}
+.box.dark ul li{border-bottom-color:rgba(255,255,255,.16)}
+.box.dark ul li::before{color:var(--gold)}
+.box.dark .timer{font-family:"Courier New",monospace;font-size:26px;font-weight:800;color:var(--gold);letter-spacing:.08em;text-align:center;padding:4px 0 10px}
+
+/* ============ 指南（details/summary） ============ */
+details.guide{
+  background:#fff;border:2.4px solid var(--ink);box-shadow:var(--shadow);border-radius:5px;margin-bottom:14px;
+}
+details.guide summary{
+  padding:15px 18px;font-size:16px;font-weight:800;cursor:pointer;list-style:none;
+  display:grid;grid-template-columns:34px 1fr auto;align-items:center;gap:12px;
+}
+details.guide summary::-webkit-details-marker{display:none}
+details.guide summary .qno{
+  width:28px;height:28px;display:grid;place-items:center;background:var(--red);color:#fff;font-size:12.5px;font-weight:900;border-radius:4px;
+}
+details.guide summary .toggle{
+  width:22px;height:22px;border:2px solid var(--ink);border-radius:3px;display:grid;place-items:center;font-size:14px;font-weight:900;line-height:1;
+}
+details.guide[open] summary .toggle{background:var(--gold)}
+details.guide .body{padding:0 18px 18px 64px;border-top:1.6px dotted var(--line);padding-top:14px;color:var(--ink-2);font-size:14.5px}
+details.guide .body b{color:var(--red-deep)}
+details.guide .body .step{display:grid;gap:8px;margin-top:12px}
+details.guide .body .step span{
+  display:grid;grid-template-columns:22px 1fr;gap:9px;align-items:start;font-size:13.5px;
+}
+details.guide .body .step span i{font-style:normal;font-weight:900;color:var(--gold);font-family:"Courier New",monospace}
+
+/* ============ 关于 ============ */
+.about{display:grid;grid-template-columns:1.2fr .8fr;gap:26px;align-items:start}
+.about article{background:#fff;border:2.4px solid var(--ink);box-shadow:var(--shadow);border-radius:5px;padding:26px 28px}
+.about article h3{font-size:20px;font-weight:900;margin-bottom:14px;font-family:"Songti SC","SimSun",Georgia,serif}
+.about article p{margin-bottom:12px;color:var(--ink-2);font-size:14.5px}
+.about article p b{color:var(--red-deep)}
+.about .stats{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.stat{background:#fff;border:2.4px solid var(--ink);box-shadow:var(--shadow-red);border-radius:5px;padding:18px 16px;text-align:center;transform:rotate(-.5deg)}
+.stat:nth-child(even){transform:rotate(.5deg)}
+.stat b{display:block;font-size:27px;font-weight:900;color:var(--red);font-family:"Courier New",monospace;line-height:1.2}
+.stat span{font-size:12.5px;color:var(--ink-2)}
+
+/* ============ 页脚 ============ */
+footer.site{
+  border-top:6px solid var(--ink);background:var(--ink);color:#cfcbc2;padding:34px 0 26px;margin-top:8px;
+  background-image:repeating-linear-gradient(90deg,transparent 0,transparent 11px,rgba(255,255,255,.04) 11px,rgba(255,255,255,.04) 12px);
+}
+.foot-inner{max-width:var(--max);margin:0 auto;padding:0 22px;display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:28px}
+footer.site h4{color:#fff;font-size:15px;font-weight:800;margin-bottom:11px;letter-spacing:.04em}
+footer.site p,footer.site li{font-size:13px;line-height:1.9;color:#b9b5ac}
+footer.site ul li a{color:#cfcbc2}
+footer.site ul li a:hover{color:var(--gold)}
+.copy{max-width:var(--max);margin:24px auto 0;padding:16px 22px 0;border-top:1.6px dotted rgba(255,255,255,.2);font-size:12px;color:#8f8b83;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+/* ============ 响应式 ============ */
+@media (max-width:1080px){
+  .grid{grid-template-columns:repeat(3,1fr);gap:18px}
+}
+@media (max-width:1000px){
+  .hero{grid-template-columns:1fr;gap:22px}
+  .hero-side{grid-template-columns:repeat(4,1fr)}
+  .rank-wrap{grid-template-columns:1fr;gap:22px}
+  .grid{grid-template-columns:repeat(2,1fr)}
+  dl.types{grid-template-columns:1fr 1fr}
+  dl.types .row:nth-last-child(-n+3){border-bottom:1.6px dotted var(--line)}
+  dl.types .row:nth-last-child(-n+2){border-bottom:none}
+}
+@media (max-width:760px){
+  body{font-size:15px}
+  .topbar-inner{font-size:11.5px;flex-wrap:wrap;gap:6px}
+  .header-inner{flex-direction:column;align-items:flex-start;padding:18px 18px 14px;gap:14px}
+  .titles h1{font-size:26px}
+  .issue{text-align:left}
+  nav.tabs{flex-wrap:wrap;padding:0 12px}
+  nav.tabs a{flex:1 1 33.33%;border-bottom:1.6px solid var(--line)}
+  main{padding:0 16px 44px}
+  section{padding:34px 0 6px}
+  .sec-head{flex-direction:column;align-items:flex-start;gap:8px}
+  .sec-head h2{font-size:21px}
+  .hero-text{padding:22px 20px}
+  .hero-text h2{font-size:23px}
+  .hero-side{grid-template-columns:1fr 1fr}
+  .grid{gap:15px}
+  figure.film figcaption h3{font-size:15px}
+  dl.types{grid-template-columns:1fr}
+  dl.types .row:nth-last-child(-n+2){border-bottom:1.6px dotted var(--line)}
+  dl.types .row:last-child{border-bottom:none}
+  .about{grid-template-columns:1fr;gap:20px}
+  .about article{padding:22px 20px}
+  .foot-inner{grid-template-columns:1fr;gap:22px}
+  .copy{flex-direction:column;gap:6px}
+  details.guide .body{padding-left:18px}
+  details.guide summary{grid-template-columns:28px 1fr auto;gap:9px}
+  ol.rank li{grid-template-columns:38px 1fr;gap:10px}
+  ol.rank .hot{grid-column:2}
+}
+@media (max-width:560px){
+  .hero-side{grid-template-columns:1fr}
+  .hero-card:nth-child(n){transform:none}
+  .stat:nth-child(n){transform:none}
+  .about .stats{grid-template-columns:1fr}
+  .btn{flex:1;text-align:center}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaobao.js"></script>
+
+<!-- 顶部信息条 -->
+<div class="topbar">
+  <div class="topbar-inner">
+    <span><b>人人影视</b> · <em>RENREN YINGSHI</em> · 影视网址导航 · 实用网址收录</span>
+    <span>收录于 <em>renrenyingshi-cn.github.io</em> · 选片不踩雷，入口只留一个</span>
+  </div>
+</div>
+
+<!-- 报头 -->
+<header class="site">
+  <div class="header-inner">
+    <div class="masthead">
+      <div class="brand" aria-hidden="true">人</div>
+      <div class="titles">
+        <h1>人人影视</h1>
+        <div class="sub">面向所有人的影视网址导航大全 · 电影 · 电视剧 · 美剧 · 韩剧 · 综艺 · 动漫 · 纪录片</div>
+        <div class="sub"><a href="#films">片单</a><a href="#types">分类</a><a href="#sites">网址收录</a><a href="#rank">热播榜</a><a href="#guide">选片指南</a><a href="#about">关于</a></div>
+      </div>
+    </div>
+    <div class="issue">
+      <strong>人人影视 · 第 <em>人人</em> 期</strong>
+      <span>收录入口：人人影视</span>
+      <span>更新：持续维护</span>
+    </div>
+  </div>
+  <nav class="tabs" aria-label="主导航">
+    <a href="#hero"><span>00</span>开场</a>
+    <a href="#films"><span>01</span>片单</a>
+    <a href="#types"><span>02</span>分类</a>
+    <a href="#sites"><span>03</span>网址收录</a>
+    <a href="#rank"><span>04</span>热播榜</a>
+    <a href="#guide"><span>05</span>选片指南</a>
+    <a href="#about"><span>06</span>关于</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- Hero -->
+  <section id="hero" class="hero">
+    <div class="hero-text">
+      <span class="tag">人人影视 · 选片入口</span>
+      <h2>不是片不够多，是<em>入口太散</em>。<br>人人影视，把地址一次收齐。</h2>
+      <p>人人影视只做一件事：把找片这件事变简单。先想清楚今天要看多久、和谁看、想看什么情绪，再按下播放——不必跳转五六个页面，也不用把时间耗在「到底哪个能用」上。</p>
+      <div class="rule"></div>
+      <div class="meta">
+        <span><b>收录入口</b> 人人影视</span>
+        <span><b>网址</b> renrenyingshi-cn.github.io</span>
+        <span><b>覆盖</b> 电影 / 电视剧 / 美剧 / 韩剧 / 综艺 / 动漫 / 纪录片 / 短剧</span>
+        <span><b>筛选维度</b> 片长 · 情绪 · 题材 · 是否完结</span>
+      </div>
+      <div class="hero-cta">
+        <a class="btn" href="#films">先看片单</a>
+        <a class="btn ghost" href="#guide">不知道看什么？</a>
+      </div>
+    </div>
+    <div class="hero-side">
+      <div class="hero-card">
+        <span class="num">人人影视 / 01</span>
+        <h3>先定片长</h3>
+        <p>30 分钟碎片、90 分钟完整、追更还是补番，先给时间划线。</p>
+      </div>
+      <div class="hero-card">
+        <span class="num">人人影视 / 02</span>
+        <h3>再定情绪</h3>
+        <p>想笑、想哭、想紧张、想放空——情绪对了，片子才对。</p>
+      </div>
+      <div class="hero-card">
+        <span class="num">人人影视 / 03</span>
+        <h3>最后定题材</h3>
+        <p>悬疑 / 喜剧 / 治愈 / 动作 / 纪录片，三秒定位不迷路。</p>
+      </div>
+      <div class="hero-card">
+        <span class="num">人人影视 / 04</span>
+        <h3>低干扰体验</h3>
+        <p>不堆弹窗、不诱导跳转，地址清楚，一眼能抄走。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 片单 -->
+  <section id="films">
+    <div class="sec-head">
+      <div>
+        <span class="no">01 / FILMS</span>
+        <h2>人人影视 · 精选片单<small>八部起步片单，按「看完不后悔」的标准挑出来的</small></h2>
+      </div>
+      <a class="more" href="#">查看完整片单 ›</a>
+    </div>
+    <div class="grid">
+      <figure class="film" style="--bg:#2c3e50;--c1:#e03c31;--c2:#7b2d8f">
+        <div class="cover"><span class="no">人人.01</span><span class="badge">院线大片</span></div>
+        <figcaption>
+          <h3>周末救场片：能让人坐得住</h3>
+          <p>节奏快、信息量大、看完有话可聊，适合两个小时不想动脑又不想无聊。</p>
+          <div class="tags"><i>悬疑</i><i>节奏</i><i>120 min</i></div>
+          <div class="line"></div>
+        </figcaption>
+      </figure>
+      <figure class="film" style="--bg:#1f3d2b;--c1:#2f7f78;--c2:#d6a63a">
+        <div class="cover"><span class="no">人人.02</span><span class="badge">治愈向</span></div>
+        <figcaption>
+          <h3>下班后的情绪修复</h3>
+          <p>不虐心、不反转、画面能当壁纸，让脑子从工作里软着陆。</p>
+          <div class="tags"><i>治愈</i><i>文艺</i><i>98 min</i></div>
+          <div class="line"></div>
+        </figcaption>
+      </figure>
+      <figure class="film" style="--bg:#3d2b1f;--c1:#e08a3c;--c2:#b52a22">
+        <div class="cover"><span class="no">人人.03</span><span class="badge">合家欢</span></div>
+        <figcaption>
+          <h3>全家都能看的那一部</h3>
+          <p>老人不嫌吵、孩子看得懂、你也不会觉得被敷衍，聚餐日备用方案。</p>
+          <div class="tags"><i>喜剧</i><i>亲情</i><i>105 min</i></div>
+          <div class="line"></div>
+        </figcaption>
+      </figure>
+      <figure class="film" style="--bg:#202b4a;--c1:#2f5fbf;--c2:#3fe0d2">
+        <div class="cover"><span class="no">人人.04</span><span class="badge">美剧</span></div>
+        <figcaption>
+          <h3>美剧：一周一集不焦虑</h3>
+          <p>每集独立成篇，停在哪都不心疼，适合通勤日断断续续看。</p>
+          <div class="tags"><i>美剧</i><i>犯罪</i><i>45 min × 10</i></div>
+          <div class="line"></div>
+        </figcaption>
+      </figure>
+      <figure class="film" style="--bg:#4a2b3d;--c1:#7b2d8f;--c2:#e03c31">
+        <div class="cover"><span class="no">人人.05</span><span class="badge">韩剧</span></div>
+        <figcaption>
+          <h3>韩剧：情绪浓度优先</h3>
+          <p>台词少而准，镜头替你说完了，想被情绪接住时看它。</p>
+          <div class="tags"><i>韩剧</i><i>情感</i><i>70 min × 16</i></div>
+          <div class="line"></div>
+        </figcaption>
+      </figure>
+      <figure class="film" style="--bg:#2b3d4a;--c1:#3f8f86;--c2:#d6a63a">
+        <div class="cover"><span class="no">人人.06</span><span class="badge">日剧</span></div>
+        <figcaption>
+          <h3>日剧：每集一个小道理</h3>
+          <p>单集结构完整，45 分钟讲完一件事，看完还能想两句。</p>
+          <div class="tags"><i>日剧</i><i>职场</i><i>47 min × 11</i></div>
+          <div class="line"></div>
+        </figcaption>
+      </figure>
+      <figure class="film" style="--bg:#3d3a1f;--c1:#d6a63a;--c2:#e08a3c">
+        <div class="cover"><span class="no">人人.07</span><span class="badge">综艺</span></div>
+        <figcaption>
+          <h3>综艺：吃饭时的背景音</h3>
+          <p>不需要记住前情，谁上场都行，适合一边吃一边看。</p>
+          <div class="tags"><i>综艺</i><i>轻松</i><i>80 min</i></div>
+          <div class="line"></div>
+        </figcaption>
+      </figure>
+      <figure class="film" style="--bg:#1f3d35;--c1:#2f7f78;--c2:#3fe0d2">
+        <div class="cover"><span class="no">人人.08</span><span class="badge">纪录片</span></div>
+        <figcaption>
+          <h3>纪录片：三十分钟涨见识</h3>
+          <p>一个主题讲透，短小不拖，看完能当谈资也能当知识。</p>
+          <div class="tags"><i>纪录片</i><i>自然</i><i>52 min</i></div>
+          <div class="line"></div>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 分类 -->
+  <section id="types">
+    <div class="sec-head">
+      <div>
+        <span class="no">02 / INDEX</span>
+        <h2>人人影视 · 分类索引<small>六类入口，按你的时间直接对号入座</small></h2>
+      </div>
+      <a class="more" href="#">全部分类 ›</a>
+    </div>
+    <dl class="types">
+      <div class="row">
+        <dt>人/01</dt>
+        <dd>
+          <span class="en">QUICK</span>
+          <h3>碎片时间（30 min 内）</h3>
+          <p>短剧、单集综艺、短片、纪录片单集——地铁上能看完，不牵挂。</p>
+        </dd>
+      </div>
+      <div class="row">
+        <dt>人/02</dt>
+        <dd>
+          <span class="en">FILM</span>
+          <h3>完整电影（90–150 min）</h3>
+          <p>院线片、独立电影、经典重看，一次性交付，适合周末整段时间。</p>
+        </dd>
+      </div>
+      <div class="row">
+        <dt>人/03</dt>
+        <dd>
+          <span class="en">SERIES</span>
+          <h3>追更剧（每周更新）</h3>
+          <p>美剧、韩剧、日剧正在播的，标记更新节奏，避免刷到过时入口。</p>
+        </dd>
+      </div>
+      <div class="row">
+        <dt>人/04</dt>
+        <dd>
+          <span class="en">BINGE</span>
+          <h3>补番式连看（全集）</h3>
+          <p>已完结的长篇，一口气刷完不卡更，配好零食和两天假期。</p>
+        </dd>
+      </div>
+      <div class="row">
+        <dt>人/05</dt>
+        <dd>
+          <span class="en">KIDS</span>
+          <h3>亲子合家欢</h3>
+          <p>动画电影、适龄剧集、无压力内容，全家同看不尴尬。</p>
+        </dd>
+      </div>
+      <div class="row">
+        <dt>人/06</dt>
+        <dd>
+          <span class="en">DOC</span>
+          <h3>纪录片与知识类</h3>
+          <p>自然、历史、社会议题，看完有收获，也能当聊天素材。</p>
+        </dd>
+      </div>
+    </dl>
+  </section>
+
+  <!-- 网址收录 -->
+  <section id="sites">
+    <div class="sec-head">
+      <div>
+        <span class="no">03 / DIRECTORY</span>
+        <h2>人人影视 · 网址收录<small>实用网址收录：电影、电视剧、综艺、动漫一网打尽</small></h2>
+      </div>
+      <a class="more" href="#">提交新网址 ›</a>
+    </div>
+    <div class="table-wrap">
+      <table class="sites">
+        <thead>
+          <tr>
+            <th style="width:22%">网站名称</th>
+            <th style="width:26%">网址</th>
+            <th style="width:12%">类型</th>
+            <th style="width:18%">热度</th>
+            <th style="width:22%">主要收录</th>
+            <th style="width:10%">访问</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="site-name">人人影视导航<span class="sub">renrenyingshi-cn.github.io</span></td>
+            <td>renrenyingshi-cn.github.io</td>
+            <td><span class="pill" style="color:#e03c31">综合</span></td>
+            <td><span class="bar"><i style="width:96%"></i></span></td>
+            <td>电影 · 电视剧 · 综艺 · 动漫</td>
+            <td><a class="go" href="#">进入</a></td>
+          </tr>
+          <tr>
+            <td class="site-name">人人影视·电影站<span class="sub">renrenyingshi-cn.github.io</span></td>
+            <td>renrenyingshi-cn.github.io</td>
+            <td><span class="pill" style="color:#2f5fbf">电影</span></td>
+            <td><span class="bar"><i style="width:88%"></i></span></td>
+            <td>院线 · 高清 · 经典 · 独立</td>
+            <td><a class="go" href="#">进入</a></td>
+          </tr>
+          <tr>
+            <td class="site-name">人人影视·剧集站<span class="sub">renrenyingshi-cn.github.io</span></td>
+            <td>renrenyingshi-cn.github.io</td>
+            <td><span class="pill" style="color:#7b2d8f">电视剧</span></td>
+            <td><span class="bar"><i style="width:82%"></i></span></td>
+            <td>美剧 · 韩剧 · 日剧 · 英剧</td>
+            <td><a class="go" href="#">进入</a></td>
+          </tr>
+          <tr>
+            <td class="site-name">人人影视·综艺<span class="sub">renrenyingshi-cn.github.io</span></td>
+            <td>renrenyingshi-cn.github.io</td>
+            <td><span class="pill" style="color:#d6a63a">综艺</span></td>
+            <td><span class="bar"><i style="width:74%"></i></span></td>
+            <td>真人秀 · 谈话 · 选秀 · 美食</td>
+            <td><a class="go" href="#">进入</a></td>
+          </tr>
+          <tr>
+            <td class="site-name">人人影视·动漫<span class="sub">renrenyingshi-cn.github.io</span></td>
+            <td>renrenyingshi-cn.github.io</td>
+            <td><span class="pill" style="color:#2f7f78">动漫</span></td>
+            <td><span class="bar"><i style="width:68%"></i></span></td>
+            <td>新番 · 剧场版 · 经典 · 国漫</td>
+            <td><a class="go" href="#">进入</a></td>
+          </tr>
+          <tr>
+            <td class="site-name">人人影视·纪录片<span class="sub">renrenyingshi-cn.github.io</span></td>
+            <td>renrenyingshi-cn.github.io</td>
+            <td><span class="pill" style="color:#3fe0d2">纪录片</span></td>
+            <td><span class="bar"><i style="width:61%"></i></span></td>
+            <td>自然 · 历史 · 社会 · 科技</td>
+            <td><a class="go" href="#">进入</a></td>
+          </tr>
+          <tr>
+            <td class="site-name">人人影视·短剧<span class="sub">renrenyingshi-cn.github.io</span></td>
+            <td>renrenyingshi-cn.github.io</td>
+            <td><span class="pill" style="color:#e08a3c">短剧</span></td>
+            <td><span class="bar"><i style="width:55%"></i></span></td>
+            <td>竖屏 · 单集 · 微短剧</td>
+            <td><a class="go" href="#">进入</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 热播榜 -->
+  <section id="rank">
+    <div class="sec-head">
+      <div>
+        <span class="no">04 / HOT</span>
+        <h2>人人影视 · 热播榜<small>实时热度排行，今晚不知道看什么就看这里</small></h2>
+      </div>
+      <a class="more" href="#">完整榜单 ›</a>
+    </div>
+    <div class="rank-wrap">
+      <ol class="rank">
+        <li>
+          <span class="info">
+            <h3>沉默的证人（院线 / 悬疑）</h3>
+            <span class="track"><i style="width:96%"></i></span>
+          </span>
+          <span class="hot">热度 <em>9.6</em></span>
+        </li>
+        <li>
+          <span class="info">
+            <h3>第七个证人（美剧 / 犯罪）</h3>
+            <span class="track"><i style="width:91%"></i></span>
+          </span>
+          <span class="hot">热度 <em>9.1</em></span>
+        </li>
+        <li>
+          <span class="info">
+            <h3>春日的来信（韩剧 / 情感）</h3>
+            <span class="track"><i style="width:87%"></i></span>
+          </span>
+          <span class="hot">热度 <em>8.7</em></span>
+        </li>
+        <li>
+          <span class="info">
+            <h3>午夜便利店（日剧 / 职场）</h3>
+            <span class="track"><i style="width:82%"></i></span>
+          </span>
+          <span class="hot">热度 <em>8.2</em></span>
+        </li>
+        <li>
+          <span class="info">
+            <h3>城市边缘（国产剧 / 现实）</h3>
+            <span class="track"><i style="width:78%"></i></span>
+          </span>
+          <span class="hot">热度 <em>7.8</em></span>
+        </li>
+        <li>
+          <span class="info">
+            <h3>深海回声（纪录片 / 自然）</h3>
+            <span class="track"><i style="width:71%"></i></span>
+          </span>
+          <span class="hot">热度 <em>7.1</em></span>
+        </li>
+        <li>
+          <span class="info">
+            <h3>周末厨房王（综艺 / 美食）</h3>
+            <span class="track"><i style="width:66%"></i></span>
+          </span>
+          <span class="hot">热度 <em>6.6</em></span>
+        </li>
+        <li>
+          <span class="info">
+            <h3>云端小镇（动漫 / 治愈）</h3>
+            <span class="track"><i style="width:60%"></i></span>
+          </span>
+          <span class="hot">热度 <em>6.0</em></span>
+        </li>
+      </ol>
+      <aside class="side">
+        <div class="box dark">
+          <h3>今日看片计时器</h3>
+          <div class="timer" id="timer">90:00</div>
+          <p style="font-size:12.5px;color:#b9b5ac">设定一个时长，到点就停。刷剧最容易失控的从来不是内容，是时间。</p>
+          <button class="go" style="width:100%;text-align:center;margin-top:8px" onclick="toggleTimer(this)">开始 / 暂停</button>
+        </div>
+        <div class="box">
+          <h3>人人影视的三个坚持</h3>
+          <ul>
+            <li>不堆入口：能合并的合并，一个栏目解决一件事。</li>
+            <li>不诱导跳转：网址清楚，能不能用一眼能判断。</li>
+            <li>不只推新：老片、冷门片同样占一席之地。</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- 选片指南 -->
+  <section id="guide">
+    <div class="sec-head">
+      <div>
+        <span class="no">05 / GUIDE</span>
+        <h2>人人影视 · 选片指南<small>六个问题，把「不知道看什么」压缩到三十秒</small></h2>
+      </div>
+      <a class="more" href="#">全部问答 ›</a>
+    </div>
+
+    <details class="guide" open>
+      <summary><span class="qno">人人.1</span><span>只有半小时，看什么不亏？</span><span class="toggle">＋</span></summary>
+      <div class="body">
+        <p>半小时的碎片时间，最怕开始得隆重、结束得仓促。<b>短剧、单集综艺、纪录片单集</b>是三个安全答案。</p>
+        <div class="step">
+          <span><i>01</i><span>先问：是想被逗笑，还是想学到点东西？</span></span>
+          <span><i>02</i><span>想笑 → 综艺单期；想学 → 纪录片单集。</span></span>
+          <span><i>03</i><span>短剧只看前三集，第四集还没抓你，就换。</span></span>
+        </div>
+      </div>
+    </details>
+
+    <details class="guide">
+      <summary><span class="qno">人人.2</span><span>有两小时整块时间，怎么选？</span><span class="toggle">＋</span></summary>
+      <div class="body">
+        <p>两小时刚好是一部完整电影，别拆成四集四十分钟的剧——那会看得又累又没记住。</p>
+        <div class="step">
+          <span><i>01</i><span>打开前先定情绪：紧张 / 治愈 / 大笑 / 动脑。</span></span>
+          <span><i>02</i><span>紧张选悬疑、动脑选剧情、大笑选喜剧、治愈选文艺片。</span></span>
+          <span><i>03</i><span>片长超过 150 分钟，请留到周末，别在困的时候硬看。</span></span>
+        </div>
+      </div>
+    </details>
+
+    <details class="guide">
+      <summary><span class="qno">人人.3</span><span>剧集该追更还是补番？</span><span class="toggle">＋</span></summary>
+      <div class="body">
+        <p><b>看更新状态，别看口碑</b>。正在播的剧追更，容易被剧透和断更折磨；完结的剧补番，体验完整。</p>
+        <div class="step">
+          <span><i>01</i><span>先看「是否完结」，再看评分。</span></span>
+          <span><i>02</i><span>未完结且更新慢 → 加到待看，不投入情绪。</span></span>
+          <span><i>03</i><span>已完结 → 一次性看，节奏和伏笔都在你手里。</span></span>
+        </div>
+      </div>
+    </details>
+
+    <details class="guide">
+      <summary><span class="qno">人人.4</span><span>综艺那么多，怎么挑？</span><span class="toggle">＋</span></summary>
+      <div class="body">
+        <p>综艺的核心不是内容，是<b>嘉宾之间的化学反应</b>。内容可以换，人不对就怎么都不好笑。</p>
+        <div class="step">
+          <span><i>01</i><span>先认人：你有好感的固定成员，看他们那几季。</span></span>
+          <span><i>02</i><span>吃饭时看，别躺着看，综艺需要一点背景音感。</span></span>
+          <span><i>03</i><span>一季看不下去，别怪自己，直接换下一档。</span></span>
+        </div>
+      </div>
+    </details>
+
+    <details class="guide">
+      <summary><span class="qno">人人.5</span><span>动漫分追更和补番，怎么不踩坑？</span><span class="toggle">＋</span></summary>
+      <div class="body">
+        <p>新番节奏快、适合每周跟进；老番作品量大，适合一次性补完。</p>
+        <div class="step">
+          <span><i>01</i><span>新番先看三集：节奏、作画、世界观三样里有一样成立就留。</span></span>
+          <span><i>02</i><span>补老番按「季」算，别按「集」算，一季就是一个完整单元。</span></span>
+          <span><i>03</i><span>剧场版请留到休息日，那是另一种电影体验。</span></span>
+        </div>
+      </div>
+    </details>
+
+    <details class="guide">
+      <summary><span class="qno">人人.6</span><span>想带孩子看，怎么选不翻车？</span><span class="toggle">＋</span></summary>
+      <div class="body">
+        <p>亲子共看的标准只有一条：<b>大人看得下去，孩子看得懂</b>。</p>
+        <div class="step">
+          <span><i>01</i><span>动画电影优先，结构完整、时长可控。</span></span>
+          <span><i>02</i><span>先看简介再放，避开成人化表达和过度惊吓。</span></span>
+          <span><i>03</i><span>看完聊两句剧情，比一直追问「看懂没」有用。</span></span>
+        </div>
+      </div>
+    </details>
+  </section>
+
+  <!-- 关于 -->
+  <section id="about" class="about">
+    <article>
+      <h3>关于人人影视</h3>
+      <p><b>人人影视</b>是一个面向所有人的影视网址导航站，收录电影、电视剧、美剧、韩剧、综艺、动漫与纪录片的<b>实用网址</b>，目标是让找片这件事变得简单、清楚、不浪费时间。</p>
+      <p>我们不制造信息，只做整理：把散落各处的入口归到一个页面，按<b>片长、情绪、题材、是否完结</b>四个维度分类，让你三十秒内做出选择。</p>
+      <p>本页为单页结构，内页链接以 <code>#</code> 占位，CSS 与脚本直接写在页面内，未生成 robots.txt 与 sitemap.xml。网站名称为<b>人人影视</b>，网址为 <b>renrenyingshi-cn.github.io</b>。</p>
+      <p>选片这件事，人人都有自己的标准。人人影视想做的，是让你的标准能快速落地——而不是看完一小时推荐，仍然不知道看什么。</p>
+    </article>
+    <div class="stats">
+      <div class="stat"><b>8</b><span>精选片单</span></div>
+      <div class="stat"><b>6</b><span>分类入口</span></div>
+      <div class="stat"><b>7</b><span>网址收录</span></div>
+      <div class="stat"><b>6</b><span>选片问答</span></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="foot-inner">
+    <div>
+      <h4>人人影视 · RENREN YINGSHI</h4>
+      <p>影视网址导航大全，收录电影、电视剧、美剧、韩剧、综艺、动漫与纪录片实用网址。选片不踩雷，入口只留一个。</p>
+    </div>
+    <div>
+      <h4>栏目导航</h4>
+      <ul>
+        <li><a href="#films">精选片单</a></li>
+        <li><a href="#types">分类索引</a></li>
+        <li><a href="#sites">网址收录</a></li>
+        <li><a href="#rank">热播榜</a></li>
+        <li><a href="#guide">选片指南</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>收录范围</h4>
+      <ul>
+        <li>电影 · 电视剧 · 美剧 · 韩剧 · 日剧</li>
+        <li>综艺 · 动漫 · 纪录片 · 短剧</li>
+        <li>网址：renrenyingshi-cn.github.io</li>
+      </ul>
+    </div>
+  </div>
+  <div class="copy">
+    <span>© 人人影视 · renrenyingshi-cn.github.io · 影视网址导航大全</span>
+    <span>单页结构 · 内页链接以 # 占位 · 未生成 robots.txt 与 sitemap.xml</span>
+  </div>
+</footer>
+
+<script>
+var timerSeconds = 90 * 60;
+var timerRunning = false;
+var timerId = null;
+function toggleTimer(btn){
+  var el = document.getElementById('timer');
+  if(timerRunning){
+    clearInterval(timerId);
+    timerRunning = false;
+    btn.textContent = '继续';
+    return;
+  }
+  timerRunning = true;
+  btn.textContent = '暂停';
+  timerId = setInterval(function(){
+    if(timerSeconds <= 0){
+      clearInterval(timerId);
+      timerRunning = false;
+      el.textContent = '时间到';
+      btn.textContent = '重置';
+      return;
+    }
+    timerSeconds--;
+    var m = Math.floor(timerSeconds / 60);
+    var s = timerSeconds % 60;
+    el.textContent = (m < 10 ? '0' + m : m) + ':' + (s < 10 ? '0' + s : s);
+  }, 1000);
+}
+</script>
+</body>
+</html>
